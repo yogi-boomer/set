@@ -1,0 +1,55 @@
+#boton{
+    display: block;
+    padding: 20px;
+    background-color: green;
+    color: wheat;
+    width: 200px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    border: 1px solid coral;
+    transition: border 500ms, background 3s, border-radius 4s;
+}
+
+#boton:hover{
+    border-radius: 15px;
+    background: crimson;
+    color: wheat;
+    border: 5px solid purple;
+}
+
+#caja{
+    margin-top: 25px;
+    width: 250px;
+    height: 250px;
+    background: salmon;
+    color: slateblue;
+    border: 5px solid crimson;
+    text-align: center;
+    font-size: 20px;
+    line-height: 200px;
+    animation-name: desplazamiento;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes desplazamiento{
+    0%{
+        margin-left: 8px;
+        transform: rotate(0deg);
+    }
+    50%{
+        margin-left: 1200px;
+        transform: rotate(360deg);
+        border-radius: 999px;
+    }
+    75%{
+        background: brown;
+    }
+    100%{
+        margin-left: 0px;
+        transform: rotate(0deg);
+    }
+}
